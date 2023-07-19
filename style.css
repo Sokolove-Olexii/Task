@@ -1,0 +1,36 @@
+.cont{
+    position: relative;
+}
+
+.box{
+    position: absolute;
+    height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 64px;
+  color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box:nth-child(1){
+    background-color: red;
+    z-index: -1;
+}
+
+.box:nth-child(2){
+    top: 100px;
+    left: 100px;
+    background-color: blue;
+    z-index: 1;
+}
+
+.box:nth-child(3){
+    top: 200px;
+    left: 200px;
+    background-color: green;
+    z-index: -1;
+}
